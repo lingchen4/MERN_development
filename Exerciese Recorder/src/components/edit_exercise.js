@@ -29,7 +29,7 @@ export default class EditExercises extends Component {
         this.setState({
           username: res.data.username,
           description: res.data.description,
-          duration: this.data.duration.duration,
+          duration: res.data.duration,
           date: new Date(res.data.date)
         });
       })
